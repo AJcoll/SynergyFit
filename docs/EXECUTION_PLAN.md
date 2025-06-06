@@ -22,51 +22,40 @@ The primary goal of Phase 1 is to rapidly develop and launch a core set of featu
 
 ---
 
-## Phase 2: Premium AI & Integration Features
+## Development Plan & App Architecture
 
-Once the MVP is stable, we will develop the core premium features.
+### 1. Visual & Brand Identity
+- [x] **Define Core Color Palette:** Establish primary (Action Blue), accent (Motivating Coral), and neutral (grays) colors.
+- [x] **Define Typography:** Establish primary (Poppins) and secondary (Lato) font families and a type scale.
+- [x] **Asset Integration:** Add font files and any other brand assets to the project.
 
-### Key Features for Phase 2:
-- **FR 4.1-4.5: AI-Powered Planning & Coaching**
-- **FR 6: Integrations (Apple HealthKit, Google Fit)**
-- **Monetization:** Implement premium subscription model.
-
-### Technical Additions for Phase 2:
-- **AI Microservice:** A separate Python service for handling complex AI computations.
-
----
-
-## Front-End Architecture Blueprint
-
-This section outlines the planned screen and navigation structure for the application.
-
-### 1. Root Navigator (Stack)
+### 2. Root Navigator (Stack)
 Manages the switch between Authentication, Onboarding, and the Main App.
 
-### 2. Authentication Flow (Stack)
+### 3. Authentication Flow (Stack)
 - `LoginScreen`: For existing users to sign in.
 - `SignUpScreen`: For new users to create an account.
 - `ForgotPasswordScreen`: For password recovery.
 
-### 3. Onboarding Flow (Stack)
-*A one-time setup process for new, authenticated users.*
-- `WelcomeScreen`
-- `DemographicsScreen`
-- `GoalSettingScreen`
-- `ActivityLevelScreen`
+### 4. Onboarding Flow (Stack)
+- [x] `WelcomeScreen`
+- [x] `DemographicsScreen`
+- [x] `GoalSettingScreen`
+- [x] `ActivityLevelScreen`
 
-### 4. Main App (Bottom Tab Navigator)
+### 5. Main App (Bottom Tab Navigator)
 *The core interface for authenticated users.*
-- **Dashboard Tab:**
+- [x] **Setup Tab Navigator:** Create the placeholder navigator and screens.
+- [ ] **Dashboard Tab:**
   - `DashboardScreen`: High-level summary of daily progress.
-- **Meals Tab:**
+- [ ] **Meals Tab:**
   - `MealLogScreen`: The primary hub for food logging.
-- **Workouts Tab:**
+- [ ] **Workouts Tab:**
   - `WorkoutLogScreen`: The primary hub for workout logging.
-- **Profile Tab:**
+- [ ] **Profile Tab:**
   - `ProfileScreen`: Hub for user settings, stats, and app configuration.
 
-### 5. Detail Screens (Pushed onto the Stack)
+### 6. Detail Screens (Pushed onto the Stack)
 *Screens that are navigated to from within the main tabs.*
 - **From Meals:**
   - `FoodSearchScreen`
@@ -82,3 +71,17 @@ Manages the switch between Authentication, Onboarding, and the Main App.
   - `NotificationSettingsScreen`
   - `IntegrationsScreen`
   - `SubscriptionScreen`
+
+---
+
+## Phase 2: Premium AI & Integration Features
+
+Once the MVP is stable, we will develop the core premium features.
+
+### Key Features for Phase 2:
+- **FR 4.1-4.5: AI-Powered Planning & Coaching**
+- **FR 6: Integrations (Apple HealthKit, Google Fit)**
+- **Monetization:** Implement premium subscription model.
+
+### Technical Additions for Phase 2:
+- **AI Microservice:** A separate Python service for handling complex AI computations.

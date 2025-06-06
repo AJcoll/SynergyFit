@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { colors, typography } from '../../styles';
 
 const MealLogScreen = () => {
   return (
@@ -14,10 +15,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: colors.background,
   },
   title: {
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: typography.sizes.h1,
+    fontFamily: typography.primary,
+    color: colors.primary,
   },
 });
 
