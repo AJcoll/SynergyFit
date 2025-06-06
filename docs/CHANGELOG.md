@@ -5,6 +5,8 @@ This document provides a human-readable summary of key changes in the project. F
 ## [Unreleased]
 ### Added
 - **Onboarding Flow:**
+  - Created `ActivityLevelScreen.tsx` to allow users to select their activity level (e.g., Sedentary, Lightly Active).
+  - Connected the `GoalSettingScreen` to the `ActivityLevelScreen`.
   - Created `GoalSettingScreen.tsx` to allow users to select their primary fitness goal.
   - Connected the `DemographicsScreen` to the `GoalSettingScreen`.
 
