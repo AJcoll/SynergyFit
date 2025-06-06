@@ -3,6 +3,10 @@
 This document provides a human-readable summary of key changes in the project. For a granular, line-by-line history, please refer to the `git log` or the commit history on GitHub.
 
 ## [Unreleased]
+### Added
+- **Onboarding Flow:**
+  - Created `GoalSettingScreen.tsx` to allow users to select their primary fitness goal.
+  - Connected the `DemographicsScreen` to the `GoalSettingScreen`.
 
 ## [0.1.0] - 2024-06-06 - Onboarding Foundation
 ### Added
