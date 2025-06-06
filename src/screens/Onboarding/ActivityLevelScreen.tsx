@@ -25,7 +25,10 @@ const ActivityLevelScreen = ({ navigation }: Props) => {
     }
     console.log('Selected Activity Level:', selectedLevel);
     // This is the end of our current onboarding flow
-    Alert.alert('Onboarding Complete!', 'You are all set up.');
+    // We navigate to the main app, which is a tab navigator.
+    // The `replace` action removes the onboarding stack from history,
+    // so the user can't press "back" to go back into the setup flow.
+    navigation.replace('MainApp');
   };
 
   const levels: { key: ActivityLevel; label: string, description: string }[] = [

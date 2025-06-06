@@ -4,6 +4,10 @@ This document provides a human-readable summary of key changes in the project. F
 
 ## [Unreleased]
 ### Added
+- **Main App UI & Navigation:**
+  - Created the `MainTabNavigator` to serve as the primary navigation for the main application.
+  - Added placeholder screens for `DashboardScreen`, `WorkoutLogScreen`, `MealLogScreen`, and `ProfileScreen`.
+  - Connected the onboarding flow to the main app, navigating the user to the `DashboardScreen` upon completion.
 - **Onboarding Flow:**
   - Created `ActivityLevelScreen.tsx` to allow users to select their activity level (e.g., Sedentary, Lightly Active).
   - Connected the `GoalSettingScreen` to the `ActivityLevelScreen`.
