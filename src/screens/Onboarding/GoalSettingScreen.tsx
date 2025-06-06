@@ -24,8 +24,8 @@ const GoalSettingScreen = ({ navigation }: Props) => {
       return;
     }
     console.log('Selected Goal:', selectedGoal);
-    // We will navigate to the next screen later
-    Alert.alert('Goal Saved!', `Your goal is to ${selectedGoal.replace('_', ' ')}.`);
+    // Navigate to the next screen
+    navigation.navigate('ActivityLevel');
   };
 
   const goals: { key: Goal; label: string }[] = [
