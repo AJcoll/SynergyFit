@@ -1,12 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button, SafeAreaView } from 'react-native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../navigation/AppNavigator'; // <-- Import the type from our central navigator
 
-// We will define this type in our navigator file later
-type RootStackParamList = {
-  Welcome: undefined;
-  // ... other screens
-};
+// The local definition is removed to avoid conflict.
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 
@@ -20,8 +17,8 @@ const WelcomeScreen = ({ navigation }: Props) => {
       <Button
         title="Get Started"
         onPress={() => {
-          // Navigate to the next onboarding screen
-          console.log('Navigate to next screen');
+          // This now correctly navigates to the Demographics screen
+          navigation.navigate('Demographics');
         }}
       />
     </SafeAreaView>
