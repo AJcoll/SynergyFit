@@ -4,6 +4,14 @@ This document provides a human-readable summary of key changes in the project. F
 
 ## [Unreleased]
 ### Added
+- **Dashboard UI & Refactor:**
+  - Created a reusable `<Card />` component to standardize container styles.
+  - Refactored the `DashboardScreen` to use the new `Card` component, cleaning up the code and style definitions.
+  - Built out the `DashboardScreen` UI with a full placeholder layout, including a header, stat cards, a weekly progress chart area, and a recent activity list.
+- **UI Branding & Foundational Styling:**
+  - Established a central brand identity with a defined color palette (Action Blue, Motivating Coral) and typography (Poppins, Lato) in `src/styles`.
+  - Integrated the font files into the project and linked them for both Android and iOS.
+  - Applied the base styles to all main tab screens (`Dashboard`, `Meals`, `Workouts`, `Profile`) for a consistent look and feel.
 - **Main App UI & Navigation:**
   - Created the `MainTabNavigator` to serve as the primary navigation for the main application.
   - Added placeholder screens for `DashboardScreen`, `WorkoutLogScreen`, `MealLogScreen`, and `ProfileScreen`.
