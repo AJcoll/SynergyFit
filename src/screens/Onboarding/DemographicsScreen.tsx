@@ -29,9 +29,8 @@ const DemographicsScreen = ({ navigation }: Props) => {
     // Log the data for now. Later we'll save it.
     console.log({ age, height, weight, gender });
 
-    // Navigate to the next screen (which we'll create later)
-    // navigation.navigate('GoalSetting');
-    Alert.alert('Success!', 'Data saved (for now). Next screen is not ready yet.');
+    // Navigate to the next screen
+    navigation.navigate('GoalSetting');
   };
 
   return (
