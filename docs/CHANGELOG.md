@@ -4,6 +4,14 @@ This document provides a human-readable summary of key changes in the project. F
 
 ## [Unreleased]
 ### Added
+- **Dashboard Data & Componentization:**
+  - Created a `mockDashboardData.ts` file to serve as a centralized, temporary data source for the dashboard.
+  - Refactored `DashboardScreen` to consume data from the mock file, making it dynamic.
+  - Created a reusable `<ActivityItem />` component to display rows in the "Recent Activity" list.
+  - Refactored `DashboardScreen` to use the `ActivityItem` component, cleaning up the JSX.
+- **Component Refactor & Reusability:**
+  - Created a dedicated `<StatCard />` component to display individual statistics, accepting `value` and `label` props.
+  - Refactored the `DashboardScreen` to use the new `StatCard` component, significantly cleaning up the JSX and removing redundant style code.
 - **Dashboard UI & Refactor:**
   - Created a reusable `<Card />` component to standardize container styles.
   - Refactored the `DashboardScreen` to use the new `Card` component, cleaning up the code and style definitions.
